@@ -3,6 +3,7 @@ import styles from "./index.module.css";
 
 import { Stick_No_Bills } from "next/font/google";
 
+
 const sticks = Stick_No_Bills({ subsets: ["latin"] });
 
 const tasks: Task[] = [
@@ -24,6 +25,7 @@ const tasks: Task[] = [
 ];
 
 export default async function Home() {
+
   return (
     <main className={styles.main}>
       <div className={styles.container}>

@@ -18,7 +18,7 @@ describe("Task List", function () {
         ]}
       />
     );
-    expect(screen.getByText("1 task")).toBeInTheDocument();
+    expect(screen.getByText("1 tasks")).toBeInTheDocument();
   });
 
   it("Renders the number of active tasks", function () {
@@ -83,7 +83,7 @@ describe("Task List", function () {
     const newTask = await screen.findByText("New Task");
     expect(newTask).toBeInTheDocument();
     expect(newTask).not.toHaveStyle("text-decoration: line-through");
-    expect(screen.getByText("1 task")).toBeInTheDocument();
+    expect(screen.getByText("1 tasks")).toBeInTheDocument();
   });
 
   it("Can delete tasks", async function () {
@@ -95,7 +95,7 @@ describe("Task List", function () {
         ]}
       />
     );
-    expect(screen.getByText("1 task")).toBeInTheDocument();
+    expect(screen.getByText("1 tasks")).toBeInTheDocument();
 
     await userEvent.click(screen.getByTestId("delete-1"));
 
